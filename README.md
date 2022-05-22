@@ -14,5 +14,5 @@ Week09：https://jinshuju.net/f/A8G5Lv
 Go进阶训练营的学习
 
 # Week02
-# dao层中遇到的错误，是否应该Wrap这个error，抛给上层，为什么，应该怎么做？
-# 应该往上抛，内部无法降级处理的error，抛给上层处理
+dao层中遇到的错误，是否应该Wrap这个error，抛给上层，为什么，应该怎么做？
+应该往上抛，内部无法降级处理的error，抛给上层处理
