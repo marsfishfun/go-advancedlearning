@@ -37,13 +37,6 @@ func FindUserByIP(w http.ResponseWriter, r *http.Request) {
 		fmt.Printf("stack trace: \n%+v\n", err)
 		rsp = &UserRsp{Code: 0, Msg: err.Error()}
 	}
-	if err != nil {
-		fmt.Printf("original error: %T, %v\n", errors.Cause(err), errors.Cause(err))
-		fmt.Printf("stack trace: \n%+v\n", err)
-		rsp = &UserRsp{Code: 0, Msg: "该IP没有对应的用户"}
-	} else {
-
-	}
 
 	jrsp, _ := json.Marshal(rsp)
 
